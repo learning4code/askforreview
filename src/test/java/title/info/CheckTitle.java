@@ -10,7 +10,7 @@ public class CheckTitle {
 	@Test
 	public void searchTitle() throws InterruptedException {
 		
-		System.setProperty( "webdriver.chrome.driver","C:\\Users\\Public\\alldrivers\\chromedriver.exe");
+		System.setProperty( "webdriver.chrome.driver","./Driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://google.com");
 		Assert.assertEquals(driver.getTitle(), "Google");
